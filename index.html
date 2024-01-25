@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flag {
+            position: relative;
+            top: 50px;
+            border: 3px solid gray;
+            width: 500px;
+            height: 430px;
+        }
+        #rectangle1 {
+            background-color: red;
+            width: 500px;
+            height: 300px;
+        }
+        #rectangle2 {
+            background-color: darkblue;
+            width: 500px;
+            height: 130px;
+            position: relative;
+            bottom: 0%;
+        }
+        #rectangle3 {
+            background-color: darkblue;
+            width: 500px;
+            height: 130px;
+            position: absolute;
+            top: 0%;
+        }
+        #rectangle3 > p {
+            color: white;
+            font-size: 2.5rem;
+            position: absolute;
+            top: -40px;
+            left: 170px;
+        }
+        #circle {
+            background-color: rgb(230, 218, 218);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 140px;
+            left: 35%;
+        }
+        #circle > #p1 {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem ;
+        }
+        #circle > #p2 {
+            position: absolute;
+            top: 50px;
+            left: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem ;
+        }
+    </style>
+</head>
+<body>
+    <div id="flag">
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
+        <div id="rectangle3">
+            <p>The Flag</p>
+        </div>
+        <div id="circle">
+            <p id="p1">of</p>
+            <p id="p2">Laos</p>
+        </div>
+    </div>
+</body>
+</html>
