@@ -1,48 +1,86 @@
 body {
-    background-color: white ;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.94);
+    color: white;
 }
-#header1 {
-    font-size: 2.6rem;
-    text-align: center;
+img {
+    width: 90vw;
 }
-#divmain > img {
-    width: 100%;
-    height: 100%;
-    position: relative;
+a {
+    text-decoration: none;
+    color: white;
+}
+.header1 {
+    text-align: left;
+    font-size: 8vW;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    gap: 2vW;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    border: 5px arial solid;
+    border-radius: 10px;    
+    background-color: rgb(252, 214, 165);
+}
+.navbar > a:hover {
+    color: rgba(19, 18, 18, 0.618);
+}
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
-#divmain > p {
-    font-family: Arial, Helvetica, sans-serif;
+.flex-container1 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
 }
-#ezelebut {
-    background-color: blueviolet;
-    border: none;
-    height: 35px;
-    border-radius: 5%;
-    position: relative;
-    left: 35%;
-
+.flex-container1 > * > * {
+    margin: 1vw;
 }
-#ezelebut:hover{
-    background-color: rgb(118, 56, 176);
+footer {
+    background-color: rgb(25, 23, 23);
 }
-
-/* Hissə2(Əzələ sistemi) */
-#main2div > img {
-    width: 100%;
-    height: 100%;
+.smedia-icons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: left;
 }
-#backbutton {
-    background-color: blueviolet;
-    border: none;
-    height: 35px;
-    width: 60px;
-    border-radius: 5%;
-    position: relative;
-    left: 78%;
+.smedia-icons-container > a > img{
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.778);
 }
-#backbutton:hover {
-    background-color: rgb(118, 56, 176);
+.smedia-icons-container > a:hover {
+    background-color: rgba(74, 72, 72, 0.863);
+}
+.contact-container1 {
+    display: flex;
+    gap: 20px;
+}
+@media screen and (min-width:1024px) {
+    .header1 {    
+        font-size: 8vW;
+    }
+    .smedia-icons-container {
+        display: flex;
+        justify-content: left;
+    }
+    .smedia-icons-container > a > img {
+        margin: none;
+    }
+}
+@media screen and (max-width:800px){
+    img {
+        width: 90vw;
+        margin: 0 5% 0 10%;
+    }
 }
